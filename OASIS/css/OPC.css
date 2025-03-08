@@ -1,64 +1,81 @@
-#payor-info{
+#OPC-button {
+    text-decoration: underline;
+}
+
+#payor-info {
     width: 70%;
     margin: auto;
     margin-top: 100px;
-    border-bottom: 5px solid #40513b;
+    border-bottom: 5px solid #3674b5;
     height: 40%;
 }
 
-#forms{
+#forms {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
-#form-pair input, #form-pair label{
+
+#form-pair input, #form-pair label {
     background-color: #edf1d6;
     border: none;
     pointer-events: none;
 }
 
-#tuition-fees{
+#tuition-fees {
     width: 70%;
     margin: 20px auto;
     height: 40%;
 }
-table{
+
+table {
     width: 100%;
+    
 }
-table, table th, table td{
+
+table, table th, table td {
     text-align: center;
-    border: 2px solid #40513b;
+    /* Removed border: 2px solid #3b74b5; */
     border-collapse: collapse;
     padding: 12px;
     background-color: white;
 }
 
-#payment{
+table th {
+    background-color: #3674b5; /* Changed to most used color */
+    color: white; /* Added for better contrast */
+}
+
+#payment {
     display: flex;
     flex-direction: column;
-    border-bottom: 5px solid #40513b;
+    border-bottom: 5px solid #3674b5;
     padding-bottom: 20px;
 }
-#total{
+
+#total {
     margin-top: 20px;
     text-align: center;
 }
-#payment-method, #payment-channel{
+
+#payment-method, #payment-channel {
     display: block;
     margin: auto;
     margin-top: 20px;
-    border: 1px solid #40513b;
+    border: 1px solid #3674b5;
     border-radius: 20px;
     width: 200px;
     background-color: white;
 }
-#payment-method-channel{
+
+#payment-method-channel {
     display: flex;
     flex-direction: column;
 }
-#pay-button{
-    border:2px solid #40513b;
+
+#pay-button {
+    border: 2px solid #3674b5;
     font-weight: bold;
     font-size: large;
     border-radius: 40px;
@@ -67,21 +84,24 @@ table, table th, table td{
     position: relative;
     top: 10px;
 }
-#pay-button:hover{
-    background-color: #40513b;
+
+#pay-button:hover {
+    background-color: #3674b5;
     color: white;
 }
-#pay-button:active{
+
+#pay-button:active {
     background-color: ivory;
 }
-#dropdown-and-button{
+
+#dropdown-and-button {
     display: flex;
     justify-content: center;
     align-items: center;    
-    gap: 10px
+    gap: 10px;
 }
 
-#online-payment-history{
+#online-payment-history {
     width: 70%;
     margin: auto;
     padding-bottom: 20px;

@@ -71,8 +71,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true || $_SESSION
 <body>
     <header>
         <div id="left">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn9GcScYmHnuqhvzZw5T0-62u8reDZpitWgwdyZcA&s" alt="Oakwood" id="logo">
-            <h3>OASIS</h3>
+            <img src="../assets/images/oasis-logo-Photoroom.jpg" alt="Oakwood" id="logo">
         </div>
         
         <h3 id="employee-dashboard-button">Dashboard</h3>

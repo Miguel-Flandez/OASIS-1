@@ -1,3 +1,6 @@
+#profile-button{
+    text-decoration: underline;
+}
 #student-information h3, #student-subjects h3{
     text-align: center;
 }
@@ -35,16 +38,18 @@
 
 
 #save{
-    border: 1px solid #40513b;
-    border-radius: 20px;
+    border: none;
+    border-radius: 5px;
     width: 100px;
-    background-color: white;
+    background-color: #3674b5;
+    color: white;
     padding: 10px;
     display: block;
     margin: 3% auto;
     font-weight: bold;
 }
 #save:hover{
-    color: white;
-    background-color: #40513b;
+    color: #3674b5;
+    background-color: white;
+    border: 1px solid #3674b5;
 }

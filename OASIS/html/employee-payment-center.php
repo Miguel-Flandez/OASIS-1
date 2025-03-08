@@ -144,7 +144,7 @@ $conn->close();
         .add-row-btn, #saveChangesBtn {
             padding: 10px 20px;
             background-color: white;
-            border: 1px solid #40513b;
+            border: 1px solid #3674b5;
             border-radius: 5px;
             cursor: pointer;
             margin-right: 10px;
@@ -155,7 +155,7 @@ $conn->close();
         }
 
         .add-row-btn:hover, #saveChangesBtn:hover {
-            background-color: #40513b;
+            background-color: #3674b5;
             color: white;
         }
 
@@ -170,8 +170,7 @@ $conn->close();
 <body>
     <header>
         <div id="left">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn9GcScYmHnuqhvzZw5T0-62u8reDZpitWgwdyZcA&s" alt="Oakwood" id="logo">
-            <h3>OASIS</h3>
+            <img src="../assets/images/oasis-logo-Photoroom.jpg" alt="Oakwood" id="logo">
         </div>
         <h3 id="employee-dashboard-button">Dashboard</h3>
         <h3 id="employee-oasis-accounts">Oasis Accounts</h3>
@@ -243,7 +242,7 @@ $conn->close();
             <button class="add-row-btn" data-table="misc">Add Row to Miscellaneous</button>
 
             <div class="button-container">
-                <button id="saveChangesBtn">Save Changes</button>
+                <button id="saveChangesBtn">Save Changes</button>   
                 <!-- Removed the two add-row-btn elements here -->
             </div>
         <?php endif; ?>

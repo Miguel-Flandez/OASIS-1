@@ -1,3 +1,4 @@
+
 #search {
     display: flex;
     align-items: center;
@@ -9,8 +10,8 @@
 #search-student {
     border: 1px solid rgba(128, 128, 128, 0.5);
     width: 20%;
-    height: 40px;
-    border-radius: 20px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 #accounts {
@@ -28,16 +29,16 @@
 
 #accounts-table, #accounts-table th, #accounts-table td {
     text-align: center;
-    border: 2px solid #40513b;
-    border-collapse: collapse;
+    /* Removed border: 2px solid #40513b; */
     padding: 12px;
     background-color: white;
 }
 
 /* Style specifically for table headers */
 #accounts-table th {
-    background-color: #f2f2f2; /* Light gray background for headers */
+    background-color: #3674b5; /* Changed to most used color */
     font-weight: bold; /* Make header text bold */
+    color: white; /* Added for better contrast */
 }
 
 .delete-btn {
@@ -49,8 +50,7 @@
     cursor: pointer;
     border-radius: 3px;
 }
+
 .delete-btn:hover {
     background-color: #cc0000;
 }
-
-

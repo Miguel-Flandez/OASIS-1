@@ -1,21 +1,27 @@
+#home-button{
+    text-decoration: underline;
+}
 #student-information h3, #student-subjects h3{
     text-align: center;
+    font-size: 30px;
 }
 #student-information,#student-subjects{
     width: 50%;
-    margin: 8% 25%;
-    padding: 2%;
+    margin: 8% 23%;
+    padding: 2% 2% 2% 5%;
     box-shadow: 0 0 5px -1px;
     overflow-x: hidden;
     background-color: white;
+    border-radius: 10px;
 }
 #student-dp{
-    width:50%;
+    width:80%;
     height: 28%;
+    border-radius: 50%;
 }
 #photo-and-info{
     display: flex;
-    gap: 5%;
+    gap: 10%;
     justify-content: center;
     align-items: center;
     
@@ -37,7 +43,7 @@
 }
 
 #save{
-    border: 1px solid #40513b;
+    border: 1px solid #3674b5;
     border-radius: 20px;
     width: 100px;
     background-color: white;
@@ -47,5 +53,5 @@
     font-weight: bold;
 }
 #save:hover{
-    color: green;
+    color: #3674b5;
 }

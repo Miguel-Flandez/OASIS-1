@@ -121,7 +121,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true || $_SESSION
         #search input {
             padding: 8px;
             border: 1px solid #ddd;
-            border-radius: 20px;
+            border-radius: 5px;
             width: 250px;
         }
     </style>
@@ -129,8 +129,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true || $_SESSION
 <body>
     <header>
         <div id="left">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn9GcScYmHnuqhvzZw5T0-62u8reDZpitWgwdyZcA&s" alt="Oakwood" id="logo">
-            <h3>OASIS</h3>
+            <img src="../assets/images/oasis-logo-Photoroom.jpg" alt="Oakwood" id="logo">
         </div>
         
         <h3 id="dashboard-button">Dashboard</h3>

@@ -6,7 +6,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: ivory;
+    background: linear-gradient(rgba(0, 0, 105, 0.5), rgba(0, 0, 105, 0.5)), url('https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/445027272_913257637481067_3316481684191874903_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeETNL449nJmeSxIim082qbdGWAT5COuzB0ZYBPkI67MHbntuU-6_wMoWYC_Zjrh7QEmPS7OOLCx9LnoviweYcms&_nc_ohc=vvJqjKdw1xwQ7kNvgEtevPA&_nc_oc=AdjqvPeC55NFXEI708RK3cYjsQLddCtTFsNMk-RXmgTl4KdkC20H0Ha8o4M8Ynz3gaY&_nc_zt=23&_nc_ht=scontent.fmnl3-1.fna&_nc_gid=A2nF0c4uPSlRBriCD_PMnG2&oh=00_AYFWlDmOaVJeoh9oMv18R7XO5R6fXeDm0hLqFu_C9lywfQ&oe=67D216B0');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .login-container {
@@ -15,8 +19,8 @@ body {
     box-shadow: 0 0 5px -1px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 80%;
-    width: 80%;
+    height: 50%;
+    width: 40%;
     text-align: center;
     
 }
@@ -32,6 +36,7 @@ h2 {
     font-weight: bold;
     font-family: 'Smooch Sans', sans-serif;
     font-size: 60px;
+    color: #3674b5;
 }
 
 .form-group {
@@ -49,8 +54,8 @@ input {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 30px;
-    border: 2px solid #40513b;
+    border-radius: 5px;
+    border: 2px solid #3674b5;
 }
 
 
@@ -68,15 +73,16 @@ button {
     margin-top: 50px;
     width: 20%;
     padding: 10px;
-    background-color: white;
-    color: #40513b;
-    border: 3px solid #40513b;
-    border-radius: 20px;
+    background-color: #3674b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #609966;
-    color: white;
+    background-color: white;
+    color: #3674b5;
+    border: 1px solid #3674b5;
 }
 
 .message {
@@ -87,4 +93,12 @@ button:hover {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+#forgot{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #578fca;
+}
+#forgot:hover{
+    color: #A1E3F9;
 }
