@@ -1,0 +1,154 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-overflow: hidden;
+    color: #40513b;
+}
+html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+body{
+    margin: 0;
+    background-color: #edf1d6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 5px -1px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    background-color: white;
+}
+#logo{
+    margin-top: 5px;
+    width: 20%;
+    float: left;
+    margin-right: 5px;
+}
+#home-button, #opc-button, #profile-button, #dashboard-button, #student-accounts, #oasis-accounts,#payment-center, #payor-history,#employee-dashboard-button,#employee-student-accounts,#employee-oasis-accounts,#employee-payment-center,#employee-payor-history{
+    font-weight: bold;
+    cursor: pointer;
+}
+#home-button:hover, #opc-button:hover, #profile-button:hover, #dashboard-button:hover, #student-accounts:hover, #oasis-accounts:hover, #payment-center:hover, #payor-history:hover,#employee-dashboard-button:hover,#employee-student-accounts:hover,#employee-oasis-accounts:hover,#employee-payment-center:hover,#employee-payor-history:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+i:hover, #logout:hover{
+    color: green;
+}
+#logout{
+    border: 0;
+    background-color: transparent;
+    font-weight: bold;
+}
+#right{
+   display: flex;
+   gap: 20px;
+}
+.fa-solid.fa-bars{
+    position: absolute;
+    left: 20px;
+}
+
+
+
+
+#sidebar{
+    margin-top: 0.5px;
+    float: left;
+    box-shadow: 0 0 5px -1px;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: #9dc08b;
+    transition: transform 1s ease;
+}
+#sidebar-top button{
+    text-align: left;
+    font-size: large;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: none;
+    box-shadow: 0 0 5px -1px;
+    padding: 10px;
+    
+    width: 100%;
+
+    background-color: #9dc08b;
+}
+#sidebar-bottom button{
+    text-align: left;
+    font-size: large;
+
+    border: none;
+    box-shadow: 0 0 5px -1px;
+    padding: 10px;
+
+    width: 100%;
+
+    background-color: white;
+
+    position: absolute;
+    bottom: 0;
+}
+#sidebar button:hover{
+    color: green;
+}
+#sidebar button:active{
+    background-color: ivory;
+}
+.hide-sidebar{
+    transform: translateX(-100%);
+}
+@media(max-width: 1000px){
+    #sidebar{
+        display: none;
+    }
+}
+
+#to-student{
+    position: absolute;
+    top: 15%;
+}
+#to-admin{
+    position: absolute;
+    top: 20%;
+}
+#to-employee{
+    position: absolute;
+    top: 25%;
+}
+
+#notif-modal{
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    position:fixed;
+    top: 80px;
+    right: 0;
+    width: 20%;
+}
+#notifs{
+    display: flex;
+    flex-direction: column;
+}
+#notif{
+    padding: 5%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+.hide{
+    display: none;
+}

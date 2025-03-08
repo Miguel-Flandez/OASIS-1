@@ -1,0 +1,118 @@
+#create-account-form {
+    width: 700px; /* Adjust as needed */
+    margin: 20px auto;
+}
+
+#create-account-form form {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Fixed label width */
+    grid-gap: 20px;
+    padding: 20px;
+    /* border: 1px solid #ccc; */ /* Remove if you don't want a border */
+}
+
+.form-row {
+    display: contents; /* Allows the label and input to participate in the grid */
+}
+
+#create-account-form label {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+#create-account-form input[type="text"],
+#create-account-form input[type="password"] {
+    width: 100%; /* Fill the remaining space */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Round the corners like in your image */
+}
+
+#create-account-form button {
+    grid-column: 1 / span 2;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #40513b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#create-account-form button:hover {
+    background-color: #40513b;
+    color: white;
+}
+
+#create-buttons{
+    display: flex;
+    width: 100%;
+    
+}
+#create-buttons button{ 
+    margin: 2% 2%;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #40513b;
+    width: 20%;
+    height: 40px;
+    font-weight: bold;
+}
+#create-buttons button:hover{
+    background-color: #40513b;
+    color: white;
+}
+
+#accounts{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    height: 50%;
+}
+
+#student-information h3, #student-subjects h3{
+    text-align: center;
+}
+#student-information,#student-subjects{
+    width: 50%;
+    margin: 5% 25%;
+    padding: 2%;
+    box-shadow: 0 0 5px -1px;
+    overflow-x: hidden;
+    background-color: white;
+    position: relative;
+}
+#info-list{
+    display: flex;
+    flex-direction: column;
+}
+#info{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#info input{
+    flex-grow: 1;
+    max-width: 70%;
+    height: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+.fa-solid.fa-key{
+    position: absolute;
+    right: 5%;
+    color: rgba(128, 128, 128, 0.6)
+}
+
+#create-account-form select {
+    width: 100%; /* Match input width */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Match rounded corners */
+    background-color: white;
+    font-size: 14px; /* Adjust as needed to match inputs */
+}
+
+#create-account-form select:focus {
+    outline: none;
+    border-color: #40513b; /* Match button hover color */
+}
