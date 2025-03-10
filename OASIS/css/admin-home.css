@@ -2,52 +2,84 @@
     text-decoration: underline;
 }
 #dashboard-top{
-    margin: 5% 25% 2% 25%;
+    margin: 7% auto 2% auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 80%;
     gap: 5%;
+
+    background-color: white;
+    padding: 1%;
+    border-radius: 5px;
 }
 
-#dashboard-info{
+/* #dashboard-info{
     margin: 0 25% 0 25%;
 
-}
-#data-analytics{
+} */
+/* #data-analytics{
     background-color: white;
     border: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 5px;
     height: 30px;
 
-}
-#info-boxes{
+} */
+/* #info-boxes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 33%;
     row-gap:50px;
-}
+} */
 #info-box{
     box-shadow: 0 0 5px -1px;
     background-color: white;
-    padding: 5%;
-    border-radius: 30px;
-    width: 23%;
+    padding: 1%;
+    border-radius: 5px;
+    width: 5%;
+    flex: 1;
+}
+#info-box p{
+    font-size: 12px;
+    font-weight: bold;
+}
+#info-box.one {
+    background-color: skyblue;
+}
+#info-box.two {
+    background-color: #a1e3f9;
+}
+#info-box.three {
+    background-color: #d1f8ef;
+}
+#info-box.four {
+    background-color: lightblue;
 }
 
 
-#graph-container{
-    margin: auto;
-    box-shadow: 0 0 5px -1px;
+
+#graph-container {
+    width:80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
     background-color: white;
-    width: 90%;
-    min-height:60vh;
-    padding: 50px;
+    margin: 0 auto;
     box-shadow: 0 0 5px -1px;
     border-radius: 10px;
+    padding: 1%;
+  }
+ 
+#graph-container div{
+    width: 40%;
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 1%;
 }
-
+#graph-container div canvas{
+    width: 80%;
+}
 .fa-solid.fa-comment-dots{
     position: absolute;
     bottom: 5%;
@@ -65,8 +97,8 @@
     position: fixed;
     bottom: 10%;
     right: 5%;
-    width: 300px;
-    height: 400px;
+    width: 80%;
+    height: 80%;
     background: white;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -95,3 +127,48 @@
     cursor: pointer;
     margin-left: 10px;
 }
+
+
+.chat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .user-message {
+    text-align: right;
+    background: #e0f7fa;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px 10px 0 10px;
+  }
+  
+  .ai-message {
+    text-align: left;
+    background: #eeeeee;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px 10px 10px 0;
+  }
+  
+  
+  .loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ccc;
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 5px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
